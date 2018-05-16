@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Srikandi LAPAN</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="icon" type="image/png" href="/static/images/icon.png"/>
+    <link rel="stylesheet" href="/static/scripts/leaflet.css">
+    <link rel="stylesheet" href="/static/scripts/main.css">
+
+</head>
+<body>
+<div id="map" class="fullscreen"></div>
+<div id="coastline" class="fullscreen"></div>
+<div id="uilayer" class="fullscreen unclickable" style="z-index: 1000">
+    <div id="logo-srikandi" class="clickable" style="width: 100%;margin: auto;position: absolute;background-color:rgba(20, 65, 66, 0.62);text-align: center">
+        <img src="/static/images/logosri.png" style="margin-top: 5px;margin-left: 5px" alt="Srikandi">
+    </div>
+    <div style="width: 100%;position: absolute;height: 100px">
+        <img src="/static/images/minilogo.png" alt="" style="margin:14px">
+    </div>
+    <div id="rightmenu" class="clickable">
+        <div class="param item itemxactive" value="pm10">PM<sub>10</sub></div>
+        <div class="param item" value="pm25">PM<sub>2.5</sub></div>
+        <div class="param item" value="o3">O<sub>3</sub></div>
+        <div class="param item" value="co">CO</div>
+        <div class="param item" value="so2">SO<sub>2</sub></div>
+        <!--<div class="param item" style="opacity: 0.5" value="no2">NO<sub>2</sub></div>-->
+    </div>
+    <div id="info" class="clickable">
+        <div style="width: 397px;height: 26px;background-color: rgba(32,112,113,0.61);color: white;padding-top: 8px;padding-left: 4px;text-align: center;"> Informasi Layar </div>
+        <div style="width: 363px;height: 11px;right: 0;padding: 10px;">
+            <div class="info-item"><label for="datepicker">Tanggal Akuisisi :</label></div>
+            <div class="info-item"><input type="text" id="datepicker" value="01-10-2017"></div>
+        </div>
+    </div>
+    <div id="legend">
+        <img id="lg-src" src="/static/images/so2.png" alt="">
+    </div>
+    <div style="width: 100%;position: absolute; text-align: center;bottom: 0;height: 20px;font-size: 10pt;">
+        ©2017 - Lembaga Penerbangan dan Antariksa Nasional
+    </div>
+    <div style="position: absolute;height: 60px; font-size: 10pt;right: 10px;top: 10px">
+        <img src="/static/images/sponsor.png" alt="">
+    </div>
+</div>
+
+<script src="/static/scripts/jquery-3.2.1.min.js"></script>
+<script src="/static/scripts/jquery-ui.js"></script>
+<script src="/static/scripts/leaflet.js"></script>
+<script src="/static/scripts/L.Map.Sync.js"></script>
+<script src="/static/scripts/main.js"></script>
+</body>
+</html>
